@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/store', function(req, res, next) {
-  //res.render('index', { title: 'TRREIExpress' });
-  res.write('Test');
-  res.end();
+  res.render('trrei', { title: 'Ein test',
+                        body: 'The body'
+                        });
 });
 
 module.exports = router;
