@@ -4,3 +4,6 @@ block content
   h1= title
   p Welcome to #{title}
   p This is #{body}
+  form(action='http://localhost:3500/store/message', method='post')
+  input(type="text",name="message",placeholder="Enter a message",size=40)
+  input(type="submit",name="Submit",value="Submit")

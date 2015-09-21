@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Greetings, Welcome to #{title}
+  form(action='http://' + process.env.MESSAGE_URL + ':3000/store/message',method='post')
+    input(type="text",name="message",placeholder="Enter a message", size="40")
+    input(type='submit',name='submit', value='Submit')
+    
